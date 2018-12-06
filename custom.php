@@ -11,7 +11,7 @@ $obj = $bootstrap->getObjectManager();
 $state = $obj->get('Magento\Framework\App\State');
 $state->setAreaCode('frontend');
 $k[0]='bin/magento';
-$k[1]='indexer:reindex'; // write your proper command like setup:upgrade,cache:enable etc...
+$k[1]='setup:static-content:deploy en_US'; // write your proper command like setup:upgrade,cache:enable etc...
 $_SERVER['argv']=$k;
 try {
     $handler = new \Magento\Framework\App\ErrorHandler();
